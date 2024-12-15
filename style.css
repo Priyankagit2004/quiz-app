@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.quiz-container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5c67f2;
+}
+
+/* Question text */
+#question {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Option buttons styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-btn {
+    padding: 15px;
+    font-size: 16px;
+    background: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover {
+    background: #3e4aad;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.option-btn:active {
+    background: #2a3475;
+}
+
+/* Selected option style */
+.option-btn.selected {
+    background: #48d1cc;
+    color: white;
+    font-weight: bold;
+}
+
+/* Controls (Next/Submit buttons) */
+.controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background: #48d1cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #36a393;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background: #2b8576;
+}
+
+/* Result display styling */
+#result {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    .option-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
